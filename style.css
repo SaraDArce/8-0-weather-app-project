@@ -1,11 +1,101 @@
-h1 {
+body {
+  display: grid;
+  grid-template-areas:
+    "a a a a a"
+    ". b b c .";
+  /* "d d d . ."; */
+  font-family: sans-serif;
+}
+
+#top {
+  border: 3px solid black;
+  text-align: center;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  grid-area: a;
+  background-color: teal;
+  color: white;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "cityName";
+}
+#top h1 {
+  grid-area: title;
+}
+
+#top form {
+  grid-area: cityName;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#displayId {
+  margin-left: 13%;
+  grid-area: b;
+  text-align: center;
+  width: 80%;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-areas:
+    "forecast"
+    "threeDay";
+}
+#forecast {
+  border: 3px solid cadetblue;
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  min-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-color: lightgrey;
+  grid-area: forecast;
+}
+
+#threeDay {
+  grid-area: threeDay;
+  text-align: center;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "today tomorrow dayafter";
+}
+#previousSearches {
+  grid-area: c;
+  /* justify-self: start; */
+  padding-top: 20px;
+}
+
+#today {
+  grid-area: today;
+  margin: 5px;
+  min-width: 220px;
+}
+
+#tomorrow {
+  grid-area: tomorrow;
+  margin: 5px;
+  min-width: 220px;
+}
+
+#dayafter {
+  grid-area: dayafter;
+  margin: 5px;
+  min-width: 220px;
+}
+
+/* h1 {
   background-color: cadetblue;
 }
 
 #error-message {
   color: red;
   font-weight: 600;
-}
+} */
 
 /* #main {
   display: grid;
@@ -16,7 +106,7 @@ h1 {
   width: 75%;
 } */
 
-#main > * {
+/* #main > * {
   border: 1px solid black;
   padding: 10px 20px;
 }
@@ -45,13 +135,13 @@ main {
   display: grid;
   grid-template-areas:
     "header header header"
-    "display display history";
-  /* width; 80%;
+    "display display history"; */
+/* width; 80%;
   margin: 15px; */
-}
+/* }
 .display {
   text-align: center;
   margin-right: 5px;
   border: 1px solid green;
   background-color: lightgray;
-}
+} */
