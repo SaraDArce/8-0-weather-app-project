@@ -1,0 +1,57 @@
+h1 {
+  background-color: cadetblue;
+}
+
+#error-message {
+  color: red;
+  font-weight: 600;
+}
+
+/* #main {
+  display: grid;
+  grid-template-areas: "header header header";
+  margin: 0 auto;
+  grid-gap: 5px;
+  max-width: 800px;
+  width: 75%;
+} */
+
+#main > * {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
+#header {
+  grid-area: header;
+  text-align: center;
+}
+
+#city-selector {
+  grid-area: selector;
+}
+
+header {
+  width: 80%;
+  padding: 10px 0px;
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(65, 240, 240);
+  text-align: center;
+  color: white;
+  display: block;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "display display history";
+  /* width; 80%;
+  margin: 15px; */
+}
+.display {
+  text-align: center;
+  margin-right: 5px;
+  border: 1px solid green;
+  background-color: lightgray;
+}

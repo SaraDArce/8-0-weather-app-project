@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" /> 
+</head>
+<body>
+    <div id="top">
+        <h1>Weather App</h1>
+        <form>
+            <label for="pick-a-location">Pick a Location </label>
+            <input type="text" id="pick-a-location" name="location"/>
+            <input type="submit" value="Get Weather" />
+        </form>
+    </div>
+    <div id="displayId" class="display">
+        <div id="forecast"><br><br>Choose a location to view the weather.</div>
+        <div id="threeDay">
+            <!-- <div id="today"></div>
+            <div id="tomorrow"></div>
+            <div id="day-after"></div> -->
+        </div>    
+    </div>
+    <div id="previousSearches" class="history"><b>Previous Searches</b>
+        <ul id="history-items">
+            <li id="history-placeholder">No previous searches.</li>
+        </ul>
+    </div>
+
+</body>
+
+
+
+
+<!-- <body>
+        <div id="header">
+    <h1>Weather App</h1>
+    <form id="city-selector">
+        <div id="error-message"></div>
+        <label for="city">Pick a Location</label>
+    
+        <input id="city" type="text" />
+
+        <input type="submit" value="Get Weather" />
+    </form>
+</div>
+<main class="display">
+        <div id="forecast">Choose a location to view the weather</div>   
+    </div>
+
+<div class ="history">
+    <h3>Previous Searches</h3>
+    <ul></ul>
+
+</div>
+   
+
+</body>
+</main> -->
+</html>
